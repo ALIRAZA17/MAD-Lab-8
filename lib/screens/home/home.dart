@@ -28,11 +28,14 @@ class _HomeState extends State<Home> {
               "0",
               style: TextStyle(fontSize: 30),
             ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  color: Colors.red,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.red),
                   child: IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.remove),
@@ -40,7 +43,9 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(width: 10),
                 Container(
-                  color: Colors.green,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.green),
                   child: IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.add),
